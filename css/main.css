@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;/* Ordenar y darle estilo*/
+    justify-content: space-between; /* Que ocupe todo el espacio del navegador */
+    align-items: center;
+    background-color: #F2D997;
+    list-style-type: none;
+    text-decoration: none; /* Elimina el subrayado de los enlaces*/
+    padding: 1em;
+    font-family: sans-serif;
+}
+
+.flex-container .logo {
+    /* font-family: 'Great Vibes', cursive; Esta letra no me gusta */
+    font-size: 30px;
+    margin: 1rem; 
+    font-family: 'Nunito Sans', sans-serif;
+    /* font-style: italic; cambia a cursiva  */
+    /* font-weight: bold; Cambia a negrita */
+}
+.flex-container .deb {
+    position: absolute;
+    font-size: 13px;
+    top: 65px;
+    left: 160px;
+    padding: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.flex-container .menu{
+    align-items: center;  /* Para que no tome el mismo tamaño que el menú */
+    justify-content: flex-end; 
+    padding: 1em;
+}
+
+.flex-container .menu li {
+     
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px; /* cambia el tamaño de la fuente */
+     /* font-style: italic; cambia a cursiva */
+    /* font-weight: bold; Cambia a negrita */
+    margin: 15px;
+    display: inline;
+}
+ 
+.minombre {
+font-family:sans-serif;   
+width: 10px;
+}
+
+/* Quilombo */
+
+.hero{
+    position: relative;
+    height: 55vh;
+    background-image: url(aaaa.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold; /*cambia a negrita  */
+}
+
+.hero::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(109, 104, 104, 0.9);
+}
+
+.hero .info-content{
+    font-size: 20px;
+    grid-column: 5/ 10;
+    grid-row: 4 / 7;
+    color: #221502;
+    z-index: 1;
+    
+}
+
+.btn-primary { 
+    color: #221502; 
+    background-color: #AB8346; 
+    border-color: #AB8346; 
+    position: absolute;
+    top: 140px;
+    left: 100px;
+  } 
+   
+  .btn-primary:hover, 
+  .btn-primary:focus, 
+  .btn-primary:active, 
+  .btn-primary.active, 
+  .open .dropdown-toggle.btn-primary { 
+    color: #221502; 
+    background-color: #FFFAFA; 
+    border-color: #AB8346; 
+  } 
+   
+  .btn-primary:active, 
+  .btn-primary.active, 
+  .open .dropdown-toggle.btn-primary { 
+    background-image: none; 
+  } 
+   
+  .btn-primary.disabled, 
+  .btn-primary[disabled], 
+  fieldset[disabled] .btn-primary, 
+  .btn-primary.disabled:hover, 
+  .btn-primary[disabled]:hover, 
+  fieldset[disabled] .btn-primary:hover, 
+  .btn-primary.disabled:focus, 
+  .btn-primary[disabled]:focus, 
+  fieldset[disabled] .btn-primary:focus, 
+  .btn-primary.disabled:active, 
+  .btn-primary[disabled]:active, 
+  fieldset[disabled] .btn-primary:active, 
+  .btn-primary.disabled.active, 
+  .btn-primary[disabled].active, 
+  fieldset[disabled] .btn-primary.active { 
+    background-color: #AB8346; 
+    border-color: #AB8346; 
+  } 
+   
+  .btn-primary .badge { 
+    color: #AB8346; 
+    background-color: #221502; 
+  }
+
+  /* Section servicios */
+  .serv {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold; /*cambia a negrita  */
+    font-size: 40px;
+    padding: 35px;
+    text-align: center;
+    color: #5F3B06;
+  }
+
+  /* Acordión */
+  .contenedor-acordeon{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+.contenedor-acordeon h2{
+    text-align: center;
+    font-size: 40px;
+    
+    margin-bottom: 35px;
+}
+.acordeon{
+    background: #fff;
+}
+.acordeon label{
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold; /*cambia a negrita  */
+    color: #5F3B06;
+    background: #F2D997;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+}
+.acordeon label:hover{
+    background: #fbe39e;
+}
+.acordeon .contenido-acordeon{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: 600px;
+    padding: 15px 0px;
+}
+.btn-acordeon{
+    display: none;
+}
+
+
+  /* .accordion { 
+    width: 70%;
+    padding-left: 30rem;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #5F3B06;
+  }
+
+  .accordion-body{
+    color: #5F3B06;
+    font-family: 'Nunito Sans', sans-serif;
+  } */
